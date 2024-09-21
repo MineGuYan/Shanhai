@@ -16,7 +16,9 @@ public class PlayerMove : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        if(horizontal != 0|| vertical != 0)
+        if(Input.GetKeyDown(KeyCode.LeftShift)) An.SetBool("Run", true);
+        else if (Input.GetKeyUp(KeyCode.LeftShift)) An.SetBool("Run", false);
+        if (horizontal != 0|| vertical != 0)
         {
             An.SetFloat("Horizontal", horizontal);
             An.SetFloat("Vertical", vertical);
@@ -24,6 +26,7 @@ public class PlayerMove : MonoBehaviour
         }
         else An.SetBool("Walk", false);
         Vector2 dir=new Vector2(horizontal, vertical);
-        RBody.velocity= dir * 3f;
+        if(An.GetBool("Run")) RBody.velocity = dir * 5f;
+        else RBody.velocity= dir * 3f;
     }
 }
