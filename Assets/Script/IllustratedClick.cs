@@ -6,12 +6,27 @@ using UnityEngine.UI;
 
 public class IllustratedClick : MonoBehaviour
 {
-    public TMP_Text t;
-    public Image i;
+    public TMP_Text text1;
+    public TextAsset text1File;
+    public TMP_Text text2;
+    public TextAsset text2File;
+    public Image image;
     public List<Sprite> R = new List<Sprite>();
+    List<string> text1List = new List<string>();
+    List<string> text2List = new List<string>();
     void Start()
     {
-        
+        var temp1Line=text1File.text.Split('\n');
+        foreach(var line in temp1Line)
+        {
+            text1List.Add(line);
+        }
+        var temp2Line = text2File.text.Split('\n');
+        foreach (var line in temp2Line)
+        {
+            text2List.Add(line);
+        }
+        Click(0);
     }
 
     void Update()
@@ -19,9 +34,10 @@ public class IllustratedClick : MonoBehaviour
         
     }
 
-    public void R1click()
+    public void Click(int index)
     {
-        i.sprite = R[0];
-        t.text = "神兽昵称：宁宁\r\n神兽信息：好色，猪批，幻想减肥\r\n技能1：睡觉\r\n技能2：瑟瑟\r\n技能3：红温";
+        image.sprite = R[index];
+        text1.text = text1List[index];
+        text2.text = text2List[index];
     }
 }
