@@ -8,10 +8,7 @@ public class BarrierClear : MonoBehaviour
 {
     public TMP_Text text;
     public TextAsset textFile;
-    public GameObject Role1;
-    public GameObject Role2;
     public GameObject DialogBox;
-    public bool isRole1;
     List<string> textList = new List<string>();
     int counter;
     void Start()
@@ -35,18 +32,6 @@ public class BarrierClear : MonoBehaviour
 
     void NextDiolog()
     {
-        if (isRole1)
-        {
-            Role1.SetActive(true);
-            Role2.SetActive(false);
-            isRole1 = false;
-        }
-        else
-        {
-            Role1.SetActive(false);
-            Role2.SetActive(true);
-            isRole1 = true;
-        }
         if (counter < textList.Count)
         {
             text.text = textList[counter++];
