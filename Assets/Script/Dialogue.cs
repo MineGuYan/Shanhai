@@ -4,21 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class BarrierClear : MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
     public TMP_Text text;
-    public TextAsset textFile;
     public GameObject DialogBox;
-    List<string> textList = new List<string>();
-    int counter;
-    void Start()
+    public static List<string> textList = new List<string>();
+    int counter = 0;
+    void OnEnable()
     {
-        var tempLine = textFile.text.Split('\n');
-        foreach (var line in tempLine)
-        {
-            textList.Add(line);
-        }
-        counter = 0;
         NextDiolog();
     }
 
@@ -39,6 +32,8 @@ public class BarrierClear : MonoBehaviour
         else
         {
             counter = 0;
+            textList.Clear();
+            Time.timeScale = 1.0f;
             DialogBox.SetActive(false);
         }
     }
