@@ -1924,18 +1924,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014745712, y: -0.020045757}
+  m_Offset: {x: 0.06316757, y: -0.27110243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.05, y: 1.35}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 0.57, y: 1.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0938072, y: 1.4260664}
+  m_Size: {x: 1.2496338, y: 0.92395306}
   m_EdgeRadius: 0
 --- !u!212 &439076982
 SpriteRenderer:
@@ -1978,7 +1978,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -744587531, guid: a26ca3e8d22da9f449f6d0f0710223ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6194c52db78e484ab0487a95b8c971b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7033,18 +7033,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014745712, y: -0.020045757}
+  m_Offset: {x: -0.14112663, y: -0.5616846}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.05, y: 1.35}
+    oldSize: {x: 1.44, y: 1.92}
     newSize: {x: 0.57, y: 1.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0938072, y: 1.4260664}
+  m_Size: {x: 0.9313164, y: 0.8122082}
   m_EdgeRadius: 0
 --- !u!212 &1533598036
 SpriteRenderer:
@@ -7087,7 +7087,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -744587531, guid: a26ca3e8d22da9f449f6d0f0710223ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09a1b2838265d8444b0faff3e1966b7d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7943,18 +7943,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014745712, y: -0.020045757}
+  m_Offset: {x: 0.024774551, y: 0.009592056}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.05, y: 1.35}
+    oldSize: {x: 1.51, y: 0.66}
     newSize: {x: 0.57, y: 1.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0938072, y: 1.4260664}
+  m_Size: {x: 1.726078, y: 0.81355476}
   m_EdgeRadius: 0
 --- !u!212 &1710112536
 SpriteRenderer:
@@ -7997,7 +7997,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -744587531, guid: a26ca3e8d22da9f449f6d0f0710223ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c52ae12f6145dd04b95b593b4d54d4bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8273,7 +8273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1795129580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9043,18 +9043,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014745712, y: -0.020045757}
+  m_Offset: {x: -0.014745712, y: 0.01836741}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.05, y: 1.35}
+    oldSize: {x: 0.95, y: 0.45}
     newSize: {x: 0.57, y: 1.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0938072, y: 1.4260664}
+  m_Size: {x: 1.0938072, y: 0.70902276}
   m_EdgeRadius: 0
 --- !u!212 &1891402205
 SpriteRenderer:
@@ -9097,7 +9097,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -744587531, guid: a26ca3e8d22da9f449f6d0f0710223ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c478a27d3f4b3b740be9d6b7ffc30976, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
