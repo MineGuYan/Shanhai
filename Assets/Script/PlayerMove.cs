@@ -28,5 +28,8 @@ public class PlayerMove : MonoBehaviour
         Vector2 dir=new Vector2(horizontal, vertical);
         if(An.GetBool("Run")) RBody.velocity = dir * 5f;
         else RBody.velocity= dir * 3f;
+
+    
     }
+    
 }
