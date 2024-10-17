@@ -1,22 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TaskManager : MonoBehaviour
 {
     [Header("依赖对象")]
-    public GameObject task;
-    public GameObject displayButton;
+    [Tooltip("任务栏")] public GameObject task;
+    [Tooltip("显示按钮")] public GameObject displayButton;
+    [Tooltip("章节显示")] public TMP_Text TaskChap;
+    [Tooltip("任务描述")] public TMP_Text TaskText;
     private bool isHide;
 
     [Header("任务列表")]
     public List<Tasks> tasks;
 
+    [Header("任务进度")]
+    public int chap, order;
+
     [System.Serializable]
     public class Tasks
     {
-        [Header("任务章节")]
-        public string chapter;
+        [Tooltip("任务章节")] public string chapter;
 
         [Header("任务列表")]
         public List<TaskList> tasksList;
@@ -24,9 +29,8 @@ public class TaskManager : MonoBehaviour
         [System.Serializable]
         public class TaskList
         {
-            [Header("任务")]
-            public string taskNumber;
-            public string description;
+            [Tooltip("任务序号")] public string taskNumber;
+            [Tooltip("任务描述")] public string description;
         }
     }
 
@@ -35,6 +39,7 @@ public class TaskManager : MonoBehaviour
     void Start()
     {
         isHide = false;
+        TaskDescriptionShow();
     }
 
     void Update()
@@ -56,5 +61,11 @@ public class TaskManager : MonoBehaviour
             displayButton.SetActive(true);
             isHide = true;
         }
+    }
+
+    public void TaskDescriptionShow()
+    {
+        TaskChap.text = tasks[chap].chapter;
+        TaskText.text = tasks[chap].tasksList[order].taskNumber+"\n"+ tasks[chap].tasksList[order].description;
     }
 }
