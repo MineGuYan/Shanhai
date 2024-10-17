@@ -120,4 +120,15 @@ public class TaskManager : MonoBehaviour
             taskProgress.order = 0;
         }
     }
+
+    public void TaskFinish()
+    {
+        if (++taskProgress.order == tasks[taskProgress.chap].tasksList.Count)
+        {
+            taskProgress.order = 0;
+            taskProgress.chap++;
+        }
+        SaveTaskProgress();
+        TaskDescriptionShow();
+    }
 }

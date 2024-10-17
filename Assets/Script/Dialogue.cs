@@ -35,6 +35,7 @@ public class Dialogue : MonoBehaviour
             textList.Clear();
             Time.timeScale = 1.0f;
             DialogBox.SetActive(false);
+            TaskManager.instance.TaskFinish();
         }
     }
 }

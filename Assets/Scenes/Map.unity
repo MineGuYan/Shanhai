@@ -2285,6 +2285,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textFile: {fileID: 4900000, guid: 4dd9582306f2f6d4fad97ffcc2a4792e, type: 3}
   DialogBox: {fileID: 1090907043}
+  Progress:
+    chap: 0
+    order: 0
 --- !u!50 &439076986
 Rigidbody2D:
   serializedVersion: 4
@@ -7731,6 +7734,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textFile: {fileID: 4900000, guid: fa5671e8cd89c7c4596ddfbe99c5bf1c, type: 3}
   DialogBox: {fileID: 1090907043}
+  Progress:
+    chap: 0
+    order: 0
 --- !u!1 &1536592112
 GameObject:
   m_ObjectHideFlags: 0
@@ -8376,7 +8382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -774.99994, y: 0}
+  m_AnchoredPosition: {x: -775, y: 0}
   m_SizeDelta: {x: -1550, y: -550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625401570
@@ -8898,6 +8904,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textFile: {fileID: 4900000, guid: b548e0b5767789947baaf3e7aa8270a4, type: 3}
   DialogBox: {fileID: 1090907043}
+  Progress:
+    chap: 0
+    order: 0
 --- !u!1 &1725890746
 GameObject:
   m_ObjectHideFlags: 0
@@ -9182,6 +9191,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textFile: {fileID: 4900000, guid: 5ee0fa8f7811b10479054a7b77418410, type: 3}
   DialogBox: {fileID: 1090907043}
+  Progress:
+    chap: 0
+    order: 0
 --- !u!114 &1795129582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10013,6 +10025,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textFile: {fileID: 4900000, guid: 235e62a630f3d3840b0cc47ac096c1d5, type: 3}
   DialogBox: {fileID: 1090907043}
+  Progress:
+    chap: 0
+    order: 0
 --- !u!1 &1913079250
 GameObject:
   m_ObjectHideFlags: 0
