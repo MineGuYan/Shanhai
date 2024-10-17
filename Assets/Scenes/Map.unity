@@ -8435,13 +8435,16 @@ MonoBehaviour:
   TaskText: {fileID: 1578971500}
   tasks:
   - chapter: "\u5E8F\u7AE0"
-    tasksList: []
+    tasksList:
+    - taskOrder: 1.1
+      description: "\u6E38\u620F\u80CC\u666F\u4ECB\u7ECD"
   - chapter: "\u7B2C\u4E00\u7AE0"
     tasksList:
-    - taskNumber: 1.1
+    - taskOrder: 1.1
       description: "\u4E0E\u5C0F\u592D\u5BF9\u8BDD"
-  chap: 1
-  order: 0
+  taskProgress:
+    chap: 0
+    order: 0
 --- !u!1 &1627859757
 GameObject:
   m_ObjectHideFlags: 0
@@ -9223,9 +9226,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795129581}
-        m_TargetAssemblyTypeName: DiaTrigger, Assembly-CSharp
-        m_MethodName: TextTrigger
+      - m_Target: {fileID: 1625401572}
+        m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
+        m_MethodName: SaveTaskProgress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
