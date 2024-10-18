@@ -22,13 +22,19 @@ public class TaskManager : MonoBehaviour
     public List<Tasks> tasks;
 
     [Header("任务进度")]
-    public TaskProgress taskProgress=new TaskProgress();
+    public TaskProgress taskProgress;
 
     [System.Serializable]
     public class TaskProgress
     {
         public int chap;
         public int order;
+
+        public TaskProgress(int chap, int order)
+        {
+            this.chap = chap;
+            this.order = order;
+        }
 
         public static bool operator ==(TaskProgress a, TaskProgress b)
         {

@@ -9,9 +9,15 @@ public class DiaTrigger : MonoBehaviour
     public GameObject DialogBox;
     public TaskManager.TaskProgress Progress;
     private Rigidbody2D RBody;
+
+    [Header("1.3")]
+    public GameObject mogu;
     void Start()
     {
         RBody = GetComponent<Rigidbody2D>();
+
+        TaskManager.TaskProgress temp = new TaskManager.TaskProgress(1,3);
+        if (TaskManager.instance.taskProgress > temp) BeforeTaskFun1_3();
     }
 
     void Update()
@@ -36,5 +42,12 @@ public class DiaTrigger : MonoBehaviour
     {
         Collider2D collider = Physics2D.OverlapCircle(RBody.position, 1f, LayerMask.GetMask("Role"));
         if (collider != null && collider.name == "Player") TextTrigger();
+
+        if (Progress.chap == 1 && Progress.order == 3) BeforeTaskFun1_3();
+    }
+
+    public void BeforeTaskFun1_3()
+    {
+        mogu.SetActive(false);
     }
 }
