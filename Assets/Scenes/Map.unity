@@ -2152,7 +2152,7 @@ GameObject:
   - component: {fileID: 439076979}
   - component: {fileID: 439076985}
   - component: {fileID: 439076986}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: TongTong
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   textFile: {fileID: 4900000, guid: 4dd9582306f2f6d4fad97ffcc2a4792e, type: 3}
   DialogBox: {fileID: 1090907043}
   Progress:
-    chap: 0
+    chap: 1
     order: 0
 --- !u!50 &439076986
 Rigidbody2D:
@@ -4453,8 +4453,7 @@ GameObject:
   - component: {fileID: 969275139}
   - component: {fileID: 969275138}
   - component: {fileID: 969275140}
-  - component: {fileID: 969275141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4633,18 +4632,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.494101, y: 0.15783978}
   m_EdgeRadius: 0
---- !u!114 &969275141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969275134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 985c4c277e151ce4e89f736bdf049017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &972690036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6684,7 +6671,6 @@ RectTransform:
   - {fileID: 944594594}
   - {fileID: 578029989}
   - {fileID: 1090907044}
-  - {fileID: 1795129580}
   - {fileID: 1625401569}
   - {fileID: 42080519}
   - {fileID: 1891293423}
@@ -7615,7 +7601,8 @@ GameObject:
   - component: {fileID: 1533598036}
   - component: {fileID: 1533598035}
   - component: {fileID: 1533598038}
-  m_Layer: 6
+  - component: {fileID: 1533598039}
+  m_Layer: 3
   m_Name: XingXing
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -7751,6 +7738,33 @@ MonoBehaviour:
   Progress:
     chap: 0
     order: 0
+--- !u!50 &1533598039
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533598034}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1536592112
 GameObject:
   m_ObjectHideFlags: 0
@@ -8786,7 +8800,8 @@ GameObject:
   - component: {fileID: 1710112536}
   - component: {fileID: 1710112535}
   - component: {fileID: 1710112538}
-  m_Layer: 6
+  - component: {fileID: 1710112539}
+  m_Layer: 3
   m_Name: GeGe
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -8922,6 +8937,33 @@ MonoBehaviour:
   Progress:
     chap: 0
     order: 0
+--- !u!50 &1710112539
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710112534}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1725890746
 GameObject:
   m_ObjectHideFlags: 0
@@ -9153,173 +9195,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6396463, y: 0.9142761}
   m_EdgeRadius: 0
---- !u!1 &1795129579
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1795129580}
-  - component: {fileID: 1795129584}
-  - component: {fileID: 1795129583}
-  - component: {fileID: 1795129582}
-  - component: {fileID: 1795129581}
-  - component: {fileID: 1795129585}
-  m_Layer: 5
-  m_Name: Test
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1795129580
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795129579}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1332060146}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.35, y: 401.58}
-  m_SizeDelta: {x: 323.95, y: 94.9}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1795129581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795129579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1656ed86438ace942b61bd855e067484, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 5ee0fa8f7811b10479054a7b77418410, type: 3}
-  DialogBox: {fileID: 1090907043}
-  Progress:
-    chap: 0
-    order: 0
---- !u!114 &1795129582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795129579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1795129583}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1795129581}
-        m_TargetAssemblyTypeName: DiaTrigger, Assembly-CSharp
-        m_MethodName: TextTrigger
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1795129583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795129579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 201bca17215dcbb429d2c935c40dd42c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1795129584
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795129579}
-  m_CullTransparentMesh: 1
---- !u!114 &1795129585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795129579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ea670da3bd0e7045998a5f81bd95458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barrier: {fileID: 1542429422}
-  progress:
-    chap: 0
-    order: 0
 --- !u!1 &1796834698
 GameObject:
   m_ObjectHideFlags: 0
@@ -10051,7 +9926,8 @@ GameObject:
   - component: {fileID: 1891402205}
   - component: {fileID: 1891402204}
   - component: {fileID: 1891402207}
-  m_Layer: 6
+  - component: {fileID: 1891402208}
+  m_Layer: 3
   m_Name: QiuYu
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10187,6 +10063,33 @@ MonoBehaviour:
   Progress:
     chap: 0
     order: 0
+--- !u!50 &1891402208
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891402203}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1913079250
 GameObject:
   m_ObjectHideFlags: 0
