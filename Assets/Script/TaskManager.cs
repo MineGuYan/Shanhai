@@ -78,7 +78,7 @@ public class TaskManager : MonoBehaviour
         [System.Serializable]
         public class TaskList
         {
-            [Tooltip("任务序号")] public string taskOrder;
+            [TextArea]
             [Tooltip("任务描述")] public string description;
             public TaskFinishFunction TFF;
         }
@@ -121,7 +121,7 @@ public class TaskManager : MonoBehaviour
     {
         TaskChap.text = tasks[taskProgress.chap].chapter;
         //TaskChapName.text = tasks[taskProgress.chap].chapName;
-        TaskText.text = tasks[taskProgress.chap].tasksList[taskProgress.order].taskOrder+"\n"+ tasks[taskProgress.chap].tasksList[taskProgress.order].description;
+        TaskText.text = tasks[taskProgress.chap].tasksList[taskProgress.order].description;
     }
 
     public void SaveTaskProgress()
