@@ -8,6 +8,7 @@ using System;
 public class TaskManager : MonoBehaviour
 {
     public static TaskManager instance;
+    public delegate void TaskFinishFunction();
 
     [Header("依赖对象")]
     [Tooltip("任务栏")] public GameObject task;
@@ -28,6 +29,41 @@ public class TaskManager : MonoBehaviour
     {
         public int chap;
         public int order;
+
+        public static bool operator ==(TaskProgress a, TaskProgress b)
+        {
+            if(a.chap == b.chap&&a.order==b.order)return true;
+            return false;
+        }
+        public static bool operator !=(TaskProgress a, TaskProgress b)
+        {
+            if (a.chap == b.chap && a.order == b.order) return false;
+            return true;
+        }
+        public static bool operator >(TaskProgress a, TaskProgress b)
+        {
+            if (a.chap > b.chap) return true;
+            else if (a.chap == b.chap && a.order > b.order) return true;
+            return false;
+        }
+        public static bool operator <(TaskProgress a, TaskProgress b)
+        {
+            if (a.chap < b.chap) return true;
+            else if (a.chap == b.chap && a.order < b.order) return true;
+            return false;
+        }
+        public static bool operator >=(TaskProgress a, TaskProgress b)
+        {
+            if (a.chap > b.chap) return true;
+            else if (a.chap == b.chap && a.order >= b.order) return true;
+            return false;
+        }
+        public static bool operator <=(TaskProgress a, TaskProgress b)
+        {
+            if (a.chap < b.chap) return true;
+            else if (a.chap == b.chap && a.order <= b.order) return true;
+            return false;
+        }
     }
 
     [System.Serializable]
@@ -44,6 +80,7 @@ public class TaskManager : MonoBehaviour
         {
             [Tooltip("任务序号")] public string taskOrder;
             [Tooltip("任务描述")] public string description;
+            public TaskFinishFunction TFF;
         }
     }
 
@@ -123,6 +160,7 @@ public class TaskManager : MonoBehaviour
 
     public void TaskFinish()
     {
+        if (tasks[taskProgress.chap].tasksList[taskProgress.order].TFF != null) tasks[taskProgress.chap].tasksList[taskProgress.order].TFF();
         if (++taskProgress.order == tasks[taskProgress.chap].tasksList.Count)
         {
             taskProgress.order = 0;

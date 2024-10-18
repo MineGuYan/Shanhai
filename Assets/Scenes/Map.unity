@@ -8382,7 +8382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -775, y: 0}
+  m_AnchoredPosition: {x: -774.99994, y: 0}
   m_SizeDelta: {x: -1550, y: -550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625401570
@@ -8448,6 +8448,10 @@ MonoBehaviour:
     tasksList:
     - taskOrder: 1.1
       description: "\u4E0E\u5C0F\u592D\u5BF9\u8BDD"
+  - chapter: "\u7B2C\u4E8C\u7AE0"
+    tasksList:
+    - taskOrder: 1.1
+      description: "\u672A\u5B8C\u5F85\u7EED"
   taskProgress:
     chap: 0
     order: 0
@@ -9151,6 +9155,7 @@ GameObject:
   - component: {fileID: 1795129583}
   - component: {fileID: 1795129582}
   - component: {fileID: 1795129581}
+  - component: {fileID: 1795129585}
   m_Layer: 5
   m_Name: Test
   m_TagString: Untagged
@@ -9238,9 +9243,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1625401572}
-        m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
-        m_MethodName: SaveTaskProgress
+      - m_Target: {fileID: 1795129581}
+        m_TargetAssemblyTypeName: DiaTrigger, Assembly-CSharp
+        m_MethodName: TextTrigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9288,6 +9293,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795129579}
   m_CullTransparentMesh: 1
+--- !u!114 &1795129585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795129579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea670da3bd0e7045998a5f81bd95458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrier: {fileID: 1542429422}
+  progress:
+    chap: 0
+    order: 0
 --- !u!1 &1796834698
 GameObject:
   m_ObjectHideFlags: 0
