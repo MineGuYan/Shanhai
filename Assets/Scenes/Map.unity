@@ -2150,8 +2150,9 @@ GameObject:
   - component: {fileID: 439076983}
   - component: {fileID: 439076982}
   - component: {fileID: 439076979}
-  - component: {fileID: 439076985}
   - component: {fileID: 439076986}
+  - component: {fileID: 439076985}
+  - component: {fileID: 439076987}
   m_Layer: 3
   m_Name: TongTong
   m_TagString: Player
@@ -2287,7 +2288,7 @@ MonoBehaviour:
   DialogBox: {fileID: 1090907043}
   Progress:
     chap: 1
-    order: 0
+    order: 6
 --- !u!50 &439076986
 Rigidbody2D:
   serializedVersion: 4
@@ -2315,6 +2316,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &439076987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439076978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1656ed86438ace942b61bd855e067484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 4900000, guid: 50997bf3c07134f4eac9bef8ef41850c, type: 3}
+  DialogBox: {fileID: 1090907043}
+  Progress:
+    chap: 1
+    order: 8
 --- !u!1 &462852789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,6 +2544,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3929768, y: 2.1266983}
   m_EdgeRadius: 0
+--- !u!1 &529938981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 529938982}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &529938982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529938981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1313681955}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &569179080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,8 +4486,8 @@ Transform:
   m_Children:
   - {fileID: 439076983}
   - {fileID: 1891402206}
-  - {fileID: 1533598037}
   - {fileID: 1710112537}
+  - {fileID: 1533598037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969275134
@@ -6541,6 +6590,7 @@ Transform:
   m_Children:
   - {fileID: 1556641260}
   - {fileID: 772089021}
+  - {fileID: 529938982}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1313681956
@@ -7756,8 +7806,8 @@ GameObject:
   - component: {fileID: 1533598037}
   - component: {fileID: 1533598036}
   - component: {fileID: 1533598035}
-  - component: {fileID: 1533598038}
   - component: {fileID: 1533598039}
+  - component: {fileID: 1533598038}
   m_Layer: 3
   m_Name: XingXing
   m_TagString: Player
@@ -7892,8 +7942,8 @@ MonoBehaviour:
   textFile: {fileID: 4900000, guid: fa5671e8cd89c7c4596ddfbe99c5bf1c, type: 3}
   DialogBox: {fileID: 1090907043}
   Progress:
-    chap: 0
-    order: 0
+    chap: 1
+    order: 15
 --- !u!50 &1533598039
 Rigidbody2D:
   serializedVersion: 4
@@ -8566,7 +8616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -774.99994, y: 0}
+  m_AnchoredPosition: {x: -775, y: 0}
   m_SizeDelta: {x: -1550, y: -550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625401570
@@ -8969,8 +9019,8 @@ GameObject:
   - component: {fileID: 1710112537}
   - component: {fileID: 1710112536}
   - component: {fileID: 1710112535}
-  - component: {fileID: 1710112538}
   - component: {fileID: 1710112539}
+  - component: {fileID: 1710112538}
   m_Layer: 3
   m_Name: GeGe
   m_TagString: Player
@@ -9105,8 +9155,8 @@ MonoBehaviour:
   textFile: {fileID: 4900000, guid: b548e0b5767789947baaf3e7aa8270a4, type: 3}
   DialogBox: {fileID: 1090907043}
   Progress:
-    chap: 0
-    order: 0
+    chap: 1
+    order: 14
 --- !u!50 &1710112539
 Rigidbody2D:
   serializedVersion: 4
@@ -10095,8 +10145,9 @@ GameObject:
   - component: {fileID: 1891402206}
   - component: {fileID: 1891402205}
   - component: {fileID: 1891402204}
-  - component: {fileID: 1891402207}
   - component: {fileID: 1891402208}
+  - component: {fileID: 1891402207}
+  - component: {fileID: 1891402209}
   m_Layer: 3
   m_Name: QiuYu
   m_TagString: Player
@@ -10231,8 +10282,8 @@ MonoBehaviour:
   textFile: {fileID: 4900000, guid: 235e62a630f3d3840b0cc47ac096c1d5, type: 3}
   DialogBox: {fileID: 1090907043}
   Progress:
-    chap: 0
-    order: 0
+    chap: 1
+    order: 10
 --- !u!50 &1891402208
 Rigidbody2D:
   serializedVersion: 4
@@ -10260,6 +10311,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1891402209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891402203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1656ed86438ace942b61bd855e067484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 4900000, guid: 4529f2baaea7a2a48910660e80149ddc, type: 3}
+  DialogBox: {fileID: 1090907043}
+  Progress:
+    chap: 1
+    order: 12
 --- !u!1 &1913079250
 GameObject:
   m_ObjectHideFlags: 0
