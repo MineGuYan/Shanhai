@@ -9,7 +9,7 @@ public class ClearBarrier : MonoBehaviour
     void Start()
     {
         if(TaskManager.instance.taskProgress > progress)BarrierClear();
-        else TaskManager.instance.tasks[progress.chap].tasksList[progress.order].TFF = BarrierClear;        
+        else TaskManager.instance.tasks[progress.chap].tasksList[progress.order].TFF += BarrierClear;        
     }
 
     public void BarrierClear()

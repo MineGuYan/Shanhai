@@ -13,9 +13,9 @@ public class PlaceTrigger : MonoBehaviour
     void Start()
     {
         TaskManager.TaskProgress temp1 = new TaskManager.TaskProgress(1, 2);
-        if (TaskManager.instance.taskProgress > temp1) BeforeTaskFun1_2();
+        if (TaskManager.instance.taskProgress > temp1 && tongtong != null) BeforeTaskFun1_2();
         TaskManager.TaskProgress temp2 = new TaskManager.TaskProgress(1, 4);
-        if (TaskManager.instance.taskProgress > temp2) BeforeTaskFun1_4();
+        if (TaskManager.instance.taskProgress > temp2 && tongtong != null) BeforeTaskFun1_4();
     }
 
     void Update()
@@ -23,7 +23,7 @@ public class PlaceTrigger : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (textFile != null && Progress == TaskManager.instance.taskProgress)
         {
@@ -36,8 +36,8 @@ public class PlaceTrigger : MonoBehaviour
             DialogBox.SetActive(true);
         }
 
-        if (Progress.chap == 1 && Progress.order == 2) BeforeTaskFun1_2();
-        if (Progress.chap == 1 && Progress.order == 4) BeforeTaskFun1_4();
+        if (TaskManager.instance.taskProgress.chap == 1 && TaskManager.instance.taskProgress.order == 2 && Progress == TaskManager.instance.taskProgress) BeforeTaskFun1_2();
+        if (TaskManager.instance.taskProgress.chap == 1 && TaskManager.instance.taskProgress.order == 4 && Progress == TaskManager.instance.taskProgress) BeforeTaskFun1_4();
     }
 
     public void BeforeTaskFun1_2()
