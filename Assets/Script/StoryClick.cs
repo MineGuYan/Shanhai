@@ -11,7 +11,12 @@ public class StoryClick : MonoBehaviour
     public TMP_Text text;
     public List<Sprite> R = new List<Sprite>();
     public List<string> textList = new List<string>();
-    static public int Index;
+    public static StoryClick instance;
+    public int Index;
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         Click(0);
